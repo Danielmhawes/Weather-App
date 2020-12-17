@@ -2,8 +2,14 @@
   <link rel = "stylesheet" type="text/css" href = "style.css">
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div id= "banner">
-    <img id="logo" src="assets/imgs/logo.png">
+    <img id="logo" src="assets/imgs/logo2.png">
+    <div class="nav">
+      <a href=""><p>Home</p></a>
+      <a href="#week"><p>Daily forcast</p></a>
+      <a href="#pop"> <p>Popular cities</p></a>
+    </div>
   </div>
   <header>
 
@@ -38,7 +44,7 @@
   <div id= "clouds">
 
 
-    <div class="weekly">
+    <div class="weekly" id="week">
       <!-- header-weekly -->
       <h1 class=" heading-3">Weather for the next seven days</h1>
 
@@ -46,8 +52,8 @@
 
       <!--New Code 2: Added search bars-->
       <div class="lon-lat">
-      <input id="lat" type="text" placeholder="latitude">
-      <input id="lon" type="text" placeholder="longitude">
+      <input id="lat" type="text" placeholder="Latitude">
+      <input id="lon" type="text" placeholder="Longitude">
       <button id="getWeekly" type="submit">Search</button>
     </div>
       <!--End of New Code 2-->
@@ -170,48 +176,7 @@
       
     </div>
   </div>
-
-  <!-- popular city section  -->
-
-  <!-- <div class="popular">
-    <h1>Popular Cities</h1>
-    <div class="cape town">
-      <h1 class="capeTown_name"></h1>
-      <img class="capeTown_icon">
-      <h2 class="capeTown_description"></h2>
-      <h2 class="capeTown_temp_max"></h1>
-      <h2 class="capeTown_temp_min"></h1>
-    </div>
-    <div class="durban">
-      <h1 class="durban_name"></h1>
-      <img class="durban_icon">
-      <h2 class="durban_description"></h2>
-      <h2 class="durban_temp_max"></h1>
-      <h2 class="durban_temp_min"></h1>
-    </div>
-    <div class="joburg">
-      <h1 class="joburg_name"></h1>
-      <img class="joburg_icon">
-      <h2 class="joburg_description"></h2>
-      <h2 class="joburg_temp_max"></h1>
-      <h2 class="joburg_temp_min"></h1>
-    </div>
-    <div class="pretoria">
-      <h1 class="pretoria_name"></h1>
-      <img class="pretoria_icon">
-      <h2 class="pretoria_description"></h2>
-      <h2 class="pretoria_temp_max"></h1>
-      <h2 class="pretoria_temp_min"></h1>
-    </div>
-    <div class="port-elizabeth">
-      <h1 class="pe_name"></h1>
-      <img class="pe_icon">
-      <h2 class="pe_description"></h2>
-      <h2 class="pe_temp_max"></h1>
-      <h2 class="pe_temp_min"></h1>
-    </div>
-  </div> -->
-  <div class="popular">
+  <div class="popular" id="pop">
     <h1 class="heading-2">Popular Cities</h1>
     <hr> 
     <div class="popular-2">
@@ -279,17 +244,13 @@
   </div>
   </div>
 </div>
-
-
-
-
   <div class="map">
   </div>
 
   <div id="contact"></div>
-<script type="text/javascript" src="jquery-3.5.1.js"></script>
-<script src="script.js"></script>
 </body>
 
 
 
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script src="script.js"></script>

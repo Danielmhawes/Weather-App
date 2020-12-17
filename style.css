@@ -1,24 +1,41 @@
 body {
   margin               : 0;
-  background-image     : url(assets/imgs/clouds.jpg);
+  background-image     : url(assets/imgs/pexels-ruvim-3560044.jpg);
   background-repeat    : no-repeat;
   background-size      : cover;
   background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
   color                : white;
+ 
+}
+html{
+  scroll-behavior: smooth;
 }
 
-header {
+/* header {
   /* background-image: url(assets/imgs/clouds.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   height: 700px; */
-}
 
 #banner {
   height: auto;
+  display: flex;
+  margin-bottom: -27px;
 }
-
+.nav{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 67px;
+  /* float: right; */
+  padding: 57px;
+  padding-left: 58%;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+}
 #logo {
   height      : 100px;
   margin-top: 2%;
@@ -48,18 +65,21 @@ hr {
   opacity: 1;
 }
 .search-bar {
-  width : 70%;
+  width: 70%;
   height: 30px;
-  border-top : none;
-  border-left : none;
-  border-right: none;
+  padding: 23px;
+  border-radius: 13px;
+  /* border-top: none; */
+  /* border-left: none; */
+  /* border-right: none; */
   background-color: rgba(255, 255, 255, 0.274);
-  color : black;
+  color: black
 }
 
 .search-button {
-  height: 30px;
-  color : rgb(12, 11, 11);
+  height: 50px;
+  color: rgb(12, 11, 11);
+  border-radius: 6px;
 }
 
 
@@ -118,29 +138,37 @@ hr {
  
 }
 #lat {
-  opacity     : 0.7;
-  border-top : none;
-  border-left : none;
-  border-right: none;
+
+  opacity: 0.7;
+  /* border-top: none; */
+  /* border-left: none; */
+  /* border-right: none; */
   background-color: rgba(255, 255, 255, 0.274);
   height: 30px;
   width: 20%;
+  padding: 18px;
+  border-radius: 6px;
+
 }
 
 #lon {
-  opacity     : 0.7;
-  width: 20%;
-  height: 30px;
-  border-top : none;
-  border-left : none;
-  border-right: none;
+
+  opacity: 0.7;
+  /* border-top: none; */
+  /* border-left: none; */
+  /* border-right: none; */
   background-color: rgba(255, 255, 255, 0.274);
-  color: rgba(0, 0, 0, 0.384);
+  height: 30px;
+  width: 20%;
+  padding: 18px;
+  border-radius: 6px;
+
 }
 
 #getWeekly{
-  height: 30px;
-  color : rgb(12, 11, 11);
+  height: 37px;
+  color: rgb(12, 11, 11);
+  padding: 9px;
 }
 
 .weekly {
@@ -288,7 +316,7 @@ hr {
 }
 
 .overlay-2{
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgb(0 0 0 / 59%);
   width: 100%;
   padding: 1px;
   height: 100%;
@@ -402,4 +430,36 @@ hr {
   font-size: 3em;
   text-align: center;
   color: white;
+}
+
+.footer{
+  width: 100%;
+  background-color: #000000ad;
+  height: 7%;
+}
+.footer p{
+  text-align: center;
+    /* margin-top: 1%; */
+    padding-top: 17px;
+    font-size: 23px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #efdddd;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  color: white;
+  background-color: #211e1ea8;
 }
